@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap B&B</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7a3d45f33d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bears Bed & Breakfast</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" i class="fa-solid fa-house"><i
+                                class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="contact.html"><i class="fa-solid fa-calendar"></i>Contact/Book A
+                            Stay</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Info</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container"></div>
+
+    <h1>Book A Stay</h1>
+    <p>Fill out the form to schedule a stay at Bears BnB.</p>
+
+
+<div class="form_container"></div>
+    <form action="thankyou.html" method="get">
+        <div class="form-row">
+            <label for="Fname">First Name:</label>
+            <input autofocus type="text" name="First Name" id="Fname" required placeholder="First Name" />
+        </div>
+
+        <div class="form-row">
+            <label for="Lname">Last Name:</label>
+            <input name="Lname" id="Lname" required placeholder="Last Name">
+        </div>
+
+        <div class="form-row">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"
+                required>
+        </div>
+
+        <div class="form-row">
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="someone@example.com">
+        </div>
+
+    </form>
+
+    <input class="submit" type="submit" value="Submit" />
+
+</body>
+
+</html>
