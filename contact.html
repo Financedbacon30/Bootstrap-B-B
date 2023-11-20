@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/7a3d45f33d.js" crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat:wght@300&family=Quicksand&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -25,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html" i class="fa-solid fa-house"><i
+                        <a class="nav-link active" aria-current="page" href="index.html"><i
                                 class="fa-solid fa-house"></i> Home</a>
                     </li>
                     <li class="nav-item">
@@ -34,51 +38,62 @@
                             Stay</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Info</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i>Info</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container"></div>
 
-    <h1>Book A Stay</h1>
-    <p>Fill out the form to schedule a stay at Bears BnB.</p>
+    <div class="contact">
+        <h1>Book A Stay</h1>
+        <p>Fill out the form to schedule a stay at Bears BnB.</p>
+    </div>
 
+    <div class="contact_container">
+        <div class="form_container">
+            <form action="thankyou.html" method="get">
+                <div class="form-row">
+                    <label for="Fname">First Name:</label>
+                    <input autofocus type="text" name="First Name" id="Fname" required placeholder="First Name" />
+                </div>
 
-<div class="form_container"></div>
-    <form action="thankyou.html" method="get">
-        <div class="form-row">
-            <label for="Fname">First Name:</label>
-            <input autofocus type="text" name="First Name" id="Fname" required placeholder="First Name" />
+                <div class="form-row">
+                    <label for="Lname">Last Name:</label>
+                    <input name="Lname" id="Lname" required placeholder="Last Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="123-456-7890" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email" placeholder="someone@example.com">
+                </div>
+
+                <input class="submit" type="submit" value="Submit" />
+
+            </form>
         </div>
 
-        <div class="form-row">
-            <label for="Lname">Last Name:</label>
-            <input name="Lname" id="Lname" required placeholder="Last Name">
+        <div class=map>
+            <h2>Our location</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1422.3657667183911!2d-111.3423370324253!3d44.520652101893255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5351a08aa9f00265%3A0xd794a6cdcef75a74!2s4080%20Huckleberry%20Loop%2C%20Island%20Park%2C%20ID%2083429!5e0!3m2!1sen!2sus!4v1700424037730!5m2!1sen!2sus"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="form-row">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"
-                required>
-        </div>
+    </div>
 
-        <div class="form-row">
-            <label for="email">Enter your email:</label>
-            <input type="email" id="email" name="email" placeholder="someone@example.com">
-        </div>
-
-        <input class="submit" type="submit" value="Submit" />
-
-    </form>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1422.3657667183911!2d-111.3423370324253!3d44.520652101893255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5351a08aa9f00265%3A0xd794a6cdcef75a74!2s4080%20Huckleberry%20Loop%2C%20Island%20Park%2C%20ID%2083429!5e0!3m2!1sen!2sus!4v1700424037730!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
-
+    <footer> <i class="fa-solid fa-envelope">Bearsbnb@hotmail.com</i><br><i class="fa-solid fa-phone">208-222-2327</i><br><i
+        class="fa-solid fa-location-dot">4080 Huckleberry Loop, Island Park, ID 83429</i></footer>
 
 </body>
-<footer> <i class="fa-solid fa-envelope">Bearsbnb@hotmail.com</i><br><i class="fa-solid fa-phone">208-222-2327</i><br><i class="fa-solid fa-location-dot">4080 Huckleberry Loop, Island Park, ID 83429</i></footer>
+
 
 </html>

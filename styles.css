@@ -1,5 +1,10 @@
 body{
     background-color: rgb(225, 223, 223);
+    font-family: 'Kalam', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
 }
 i{
     padding: 5px;
@@ -56,4 +61,43 @@ footer{
     
     
 }
+
+.contact_container {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+   margin-bottom: 20px;
+    display: flex;
+
+}
+ .contact p{
+    text-align: center;
+    
+ }
+
+ .form_container{
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-right: 60px;
+ }
+
+.form-row{
+    padding:2px;
+    
+}
+
+.submit{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
+
+}
+input{
+    padding:5px;
+    width: 300px;
+    display: block;
+
+}
+
+
 
